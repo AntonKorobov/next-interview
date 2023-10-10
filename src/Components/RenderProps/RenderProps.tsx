@@ -17,7 +17,7 @@ interface IRenderProps {
 }
 
 export function RenderProps({ renderHours, renderMinutes, renderSeconds }: IRenderProps) {
-  const [time, setTime] = useState<ITime>({ h: 0, m: 0, s: 0 });
+  const [time, setTime] = useState<ITime>({ h: 11, m: 59, s: 50 });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -27,10 +27,12 @@ export function RenderProps({ renderHours, renderMinutes, renderSeconds }: IRend
         if (currentTime.s === 60) {
           currentTime.s = 0;
           currentTime.m++;
-        } else if (currentTime.m === 60) {
+        }
+        if (currentTime.m === 60) {
           currentTime.m = 0;
           currentTime.h++;
-        } else if (currentTime.h === 12) {
+        }
+        if (currentTime.h === 12) {
           currentTime.h = 0;
         }
         return currentTime;
