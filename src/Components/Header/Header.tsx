@@ -21,6 +21,11 @@ export default function Header() {
             Context
           </Link>
         </li>
+        <li>
+          <Link className={pathname === '/renderprops' ? style.activeLink : ''} href="/renderprops">
+            RenderProps
+          </Link>
+        </li>
       </ul>
     </header>
   );

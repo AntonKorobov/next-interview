@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, ReactNode, createContext } from 'react';
+import { useState, ReactNode, createContext, SetStateAction } from 'react';
 
 interface IContext {
   name: string;
-  setName: (value: string) => void;
+  setName: (value: SetStateAction<string>) => void;
 }
 
 export const contextFunc = createContext<IContext>({ name: 'default', setName: () => {} });
