@@ -26,6 +26,11 @@ export default function Header() {
             RenderProps
           </Link>
         </li>
+        <li>
+          <Link className={pathname === '/hoc' ? style.activeLink : ''} href="/hoc">
+            HOC
+          </Link>
+        </li>
       </ul>
     </header>
   );
