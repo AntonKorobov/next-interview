@@ -1,3 +1,5 @@
+'use client';
+
 import { Component, ReactNode, ErrorInfo } from 'react';
 
 interface IErrorBoundaryProps {
@@ -13,12 +15,11 @@ export class ErrorBoundaryProvider extends Component<IErrorBoundaryProps, IError
     hasError: false,
   };
 
-  // static getDerivedStateFromError() {
-  //   return { hasError: true };
-  // }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
 
   ComponentDidCatch(Error: Error, info: ErrorInfo) {
-    this.setState({ hasError: true });
     console.log(Error, info);
   }
 

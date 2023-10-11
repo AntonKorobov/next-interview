@@ -1,7 +1,7 @@
 'use client';
 
 import { ErrorBoundaryProvider } from '@/Components/ErrorBoundary/ErrorBoundaryProvider';
-import { ErrorComponent } from '@/Components/ErrorBoundary/ErrorComonent';
+import { ErrorComponent } from '@/Components/ErrorBoundary/ErrorComponent';
 
 //https://medium.com/@bobjunior542/how-to-use-error-boundaries-in-react-js-with-typescript-ee90ec814bf1
 

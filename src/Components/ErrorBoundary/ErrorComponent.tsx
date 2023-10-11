@@ -1,10 +1,10 @@
+'use client';
+
 import { useEffect } from 'react';
 
 export function ErrorComponent() {
   useEffect(() => {
-    setTimeout(() => {
-      throw new Error('Oops, something went wrong!');
-    }, 2000);
+    throw new Error('Oops, something went wrong!');
   }, []);
 
   return (
