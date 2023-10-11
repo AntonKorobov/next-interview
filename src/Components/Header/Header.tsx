@@ -31,6 +31,11 @@ export default function Header() {
             HOC
           </Link>
         </li>
+        <li>
+          <Link className={pathname === '/errorboundary' ? style.activeLink : ''} href="/errorboundary">
+            ErrorBoundary
+          </Link>
+        </li>
       </ul>
     </header>
   );
