@@ -36,6 +36,11 @@ export default function Header() {
             ErrorBoundary
           </Link>
         </li>
+        <li>
+          <Link className={pathname === '/ref' ? style.activeLink : ''} href="/ref">
+            Ref
+          </Link>
+        </li>
       </ul>
     </header>
   );

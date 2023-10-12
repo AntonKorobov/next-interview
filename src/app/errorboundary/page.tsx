@@ -4,6 +4,7 @@ import { ErrorBoundaryProvider } from '@/Components/ErrorBoundary/ErrorBoundaryP
 import { ErrorComponent } from '@/Components/ErrorBoundary/ErrorComponent';
 
 //https://medium.com/@bobjunior542/how-to-use-error-boundaries-in-react-js-with-typescript-ee90ec814bf1
+//https://nextjs.org/docs/pages/building-your-application/configuring/error-handling
 
 export default function ErrorBoundaryPage() {
   return (
