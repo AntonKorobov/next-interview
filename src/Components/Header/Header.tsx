@@ -41,6 +41,11 @@ export default function Header() {
             Ref
           </Link>
         </li>
+        <li>
+          <Link className={pathname === '/reducer' ? style.activeLink : ''} href="/reducer">
+            Reducer
+          </Link>
+        </li>
       </ul>
     </header>
   );
